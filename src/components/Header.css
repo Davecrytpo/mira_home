@@ -1,0 +1,140 @@
+/* Existing CSS */
+.logo-icon {
+  height: 40.5px;
+  width: 156.8px;
+  position: relative;
+}
+
+.home,
+.stays,
+.become-a-host {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 39px;
+  font-weight: bold; /* Make text bold */
+}
+
+.become-a-host,
+.stays {
+  min-width: 36px;
+}
+
+.become-a-host {
+  min-width: 94px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center align the nav links */
+  justify-content: center; /* Center the nav links */
+  gap: var(--gap-11xl);
+  flex: 1; /* Allow nav-links to take available space */
+}
+
+.avatar-icon,
+.notifications-icon {
+  height: 26.5px;
+  width: 26px;
+  position: relative;
+  object-fit: contain;
+}
+
+.avatar-icon {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.login-section {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+
+.header,
+.header-content,
+.login-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1280px;
+  gap: var(--gap-xl);
+}
+
+.header {
+  align-self: stretch;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-grey-border);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-sm) var(--padding-61xl) var(--padding-xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-archivo);
+}
+
+@media screen and (max-width: 1275px) {
+  .header-content {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .header {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+
+/* New CSS for Sign-up and Login buttons */
+.signup-btn, .login-btn {
+  background-color: #134732; /* Change as needed */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.signup-btn:hover, .login-btn:hover {
+  background-color: #134732; /* Change as needed */
+}
+
+/* Adjusting the gap for the new buttons in the nav-links */
+.nav-links {
+  gap: var(--gap-11xl);
+}
+
+@media screen and (max-width: 750px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-sm); /* Adjust the gap for smaller screens */
+  }
+}
+
+/* Aligning the buttons to the right end of the screen */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-sm);
+}

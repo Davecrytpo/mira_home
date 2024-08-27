@@ -1,0 +1,182 @@
+.about-this-home {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.welcome-to-brightwoods {
+  margin-block-start: 0;
+  margin-block-end: 17px;
+}
+
+.living-space {
+  font-family: var(--font-archivo);
+}
+
+.living-space-this-charming-ca {
+  margin-block-start: 0;
+  margin-block-end: 17px;
+}
+
+.bedrooms {
+  font-family: var(--font-archivo);
+}
+
+.bedrooms-with-3-beautifully-a {
+  margin-block-start: 0;
+  margin-block-end: 17px;
+}
+
+.kitchen-dining {
+  font-family: var(--font-archivo);
+}
+
+.kitchen-dining-our-fully-eq {
+  margin-block-start: 0;
+  margin-block-end: 17px;
+}
+
+.bathrooms {
+  font-family: var(--font-archivo);
+}
+
+.bathrooms-2-modern-bathrooms {
+  margin-block-start: 0;
+  margin-block-end: 17px;
+}
+
+.outdoor-space {
+  font-family: var(--font-archivo);
+}
+
+.outdoor-space-step-outside-to {
+  margin-block-start: 0;
+  margin-block-end: 17px;
+}
+
+.location {
+  font-family: var(--font-archivo);
+}
+
+.location-located-just-minutes {
+  margin-block-start: 0;
+  margin-block-end: 17px;
+}
+
+.hosted-with-love {
+  font-family: var(--font-archivo);
+}
+
+.hosted-with-love-we-take-prid {
+  margin-block-start: 0;
+  margin-block-end: 17px;
+}
+
+.come-be-our {
+  margin: 0;
+}
+
+.welcome-to-brightwoods-container {
+  align-self: stretch;
+  position: relative;
+  line-height: 160%;
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+}
+
+.button4 {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: center;
+  display: inline-block;
+  min-width: 88px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.about-listing {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+  min-width: 539px;
+}
+
+.about-listing,
+.description-details,
+.listing-description,
+.listing-highlights {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.listing-highlights {
+  flex-direction: column;
+  padding: 0 var(--padding-120xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  min-width: 470px;
+  font-size: var(--font-size-lg);
+}
+
+.description-details,
+.listing-description {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-21xl);
+  font-size: var(--font-size-base);
+}
+
+.listing-description {
+  border-bottom: 1px solid var(--light-grey-border);
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 0 0 var(--padding-3xl);
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--dark);
+  font-family: var(--font-archivo);
+}
+
+@media screen and (max-width: 1275px) {
+  .listing-highlights {
+    flex: 1;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+
+  .description-details {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-listing,
+  .listing-highlights {
+    min-width: 100%;
+  }
+
+  .description-details {
+    gap: var(--gap-xl);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-this-home {
+    font-size: var(--font-size-lgi);
+  }
+}

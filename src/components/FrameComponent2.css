@@ -1,0 +1,103 @@
+.or-sign-up {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 26px;
+}
+.google-icon {
+  width: 40px;
+  height: 40.5px;
+  position: relative;
+  object-fit: contain;
+}
+.social-labels {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.24px;
+}
+.social-login {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) var(--padding-smi);
+  box-sizing: border-box;
+  gap: var(--gap-lg);
+  min-width: 125px;
+}
+.facebook-icon {
+  width: 40px;
+  height: 40.5px;
+  position: relative;
+  object-fit: contain;
+}
+.text1 {
+  position: relative;
+  letter-spacing: 0.24px;
+  display: inline-block;
+  min-width: 73px;
+}
+.social-login1 {
+  flex: 0.5659;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) var(--padding-22xl);
+  box-sizing: border-box;
+  gap: var(--gap-lg);
+  min-width: 125px;
+}
+.apple-icon {
+  width: 40px;
+  height: 40.5px;
+  position: relative;
+  object-fit: contain;
+}
+.text2 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.24px;
+}
+.social-login2 {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) var(--padding-smi);
+  box-sizing: border-box;
+  gap: var(--gap-lg);
+  min-width: 125px;
+}
+.or-sign-up-with-parent,
+.social-login-container {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.social-login-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 var(--padding-9xs) 0 0;
+  gap: 14px 12px;
+  text-align: center;
+  color: var(--light-text);
+}
+.or-sign-up-with-parent {
+  flex-direction: column;
+  gap: var(--gap-3xs);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--dark);
+  font-family: var(--font-archivo);
+}

@@ -1,0 +1,496 @@
+.main-content-icon {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.image-grid-icon,
+.image-grid-icon1,
+.image-grid-icon2,
+.image-grid-icon3 {
+  align-self: stretch;
+  width: 160px;
+  max-height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  min-height: 86px;
+}
+.gallery-image-icon {
+  height: 100%;
+  width: 148.4px;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-9xs);
+  max-height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.vector-icon {
+  height: 24.6px;
+  width: 31.7px;
+  position: relative;
+  z-index: 1;
+}
+.content-wrapper,
+.image-gallery,
+.image-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.image-grid {
+  flex-direction: row;
+  padding: var(--padding-11xl-6) var(--padding-44xl) var(--padding-11xl-8)
+    var(--padding-45xl);
+  position: relative;
+  flex-shrink: 0;
+}
+.content-wrapper,
+.image-gallery {
+  width: 782px;
+  max-width: 100%;
+}
+.image-gallery {
+  border-radius: var(--br-5xs);
+  overflow-x: auto;
+  flex-direction: row;
+  gap: var(--gap-3xs);
+}
+.content-wrapper {
+  height: 539px;
+  flex-direction: column;
+  gap: var(--gap-mini);
+  min-width: 782px;
+}
+.brightwoods-cabin {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: inherit;
+}
+.bridlepath-ontario-canada {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+}
+.location-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  min-width: 281px;
+  max-width: 100%;
+}
+.heart-icon1 {
+  height: 36px;
+  width: 36px;
+  position: relative;
+}
+.listing-title1,
+.rating-value {
+  display: flex;
+  align-items: center;
+}
+.listing-title1 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  max-width: 100%;
+}
+.rating-value {
+  height: 11px;
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  min-width: 25px;
+}
+.rating-star-icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.rating1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+}
+.reviews {
+  position: relative;
+  text-decoration: underline;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  min-width: 95px;
+}
+.review-count {
+  border-left: 1px solid var(--light-grey-border);
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--padding-6xs);
+  color: var(--accent);
+}
+.listing-features,
+.listing-header,
+.review-count {
+  display: flex;
+  justify-content: flex-start;
+}
+.listing-features {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-7xs);
+  font-size: var(--font-size-base);
+}
+.listing-header {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  max-width: 100%;
+}
+.welcome-to-our {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 160%;
+}
+.listing-details {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+  max-width: 100%;
+}
+.night1,
+.price-value {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: inline-block;
+}
+.price-value {
+  min-width: 88px;
+  white-space: nowrap;
+}
+.night1 {
+  min-width: 48px;
+}
+.nightly-rate,
+.price-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.nightly-rate {
+  flex-direction: column;
+  padding: var(--padding-lg-5) 0 0;
+  font-size: var(--font-size-lg);
+}
+.price-info {
+  flex-direction: row;
+  gap: var(--gap-10xs);
+}
+.icon1 {
+  position: absolute;
+  height: 43.33%;
+  width: 63.11%;
+  top: 28.89%;
+  right: 18.45%;
+  bottom: 27.78%;
+  left: 18.45%;
+  border-radius: var(--br-12xs-5);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.trend-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -7.28%;
+  bottom: -8.33%;
+  left: 0;
+  border-radius: var(--br-9xs-5);
+  border: 1.5px solid var(--accent);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.icon-parent {
+  position: absolute;
+  height: 81.82%;
+  width: 93.64%;
+  top: 9.09%;
+  right: 3.18%;
+  bottom: 9.09%;
+  left: 3.18%;
+}
+.icontrend {
+  height: 22px;
+  width: 22px;
+  position: relative;
+}
+.best-time-to {
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.booking-recommendation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs-5) 0 0;
+}
+.booking-button {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.booking-button,
+.booking-c-t-a,
+.booking-details {
+  display: flex;
+  align-items: flex-start;
+}
+.booking-c-t-a {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-4xs-5) 0 0;
+  font-size: var(--font-size-base);
+  color: var(--accent);
+}
+.booking-details {
+  align-self: stretch;
+  height: 39px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 var(--padding-4xs-5);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+}
+.button3 {
+  position: relative;
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 121px;
+}
+.booking-details-parent,
+.search-flights-button2 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.search-flights-button2 {
+  border-radius: var(--br-7xs);
+  background-color: var(--accent);
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-xl);
+  white-space: nowrap;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--white);
+}
+.booking-details-parent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+  font-size: var(--font-size-17xl);
+}
+.hosted-by {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.02em;
+  color: inherit;
+  display: inline-block;
+  min-width: 80px;
+}
+.host-picture-icon {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.joined-in-may,
+.michelle-ward {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: inline-block;
+}
+.michelle-ward {
+  line-height: 150%;
+  font-weight: 600;
+  min-width: 108px;
+}
+.joined-in-may {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-200);
+  min-width: 125px;
+}
+.host-name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-11xs);
+  min-width: 188px;
+}
+.badge-icon {
+  height: 18.4px;
+  width: 12.3px;
+  position: relative;
+}
+.superhost1 {
+  height: 11px;
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  min-width: 75px;
+}
+.host-badge,
+.host-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.host-badge {
+  border-radius: var(--br-mid);
+  background-color: var(--color-lightcyan);
+  padding: var(--padding-5xs) var(--padding-2xs);
+  gap: var(--gap-8xs);
+  color: var(--accent);
+}
+.host-details {
+  align-self: stretch;
+  border-top: 0.7px solid var(--light-grey-border);
+  padding: var(--padding-6xs) 0 0;
+  gap: var(--gap-3xs);
+  color: var(--dark);
+}
+.content-layout,
+.host-info,
+.listing-info1,
+.page-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.host-info {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-base);
+  color: var(--light-text);
+}
+.content-layout,
+.listing-info1,
+.page-body {
+  max-width: 100%;
+}
+.listing-info1 {
+  flex: 1;
+  border-radius: var(--br-6xs);
+  background-color: var(--white);
+  border: 1px solid var(--light-grey-border);
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: var(--padding-17xl) var(--padding-8xl);
+  gap: var(--gap-9xl);
+  min-width: 344px;
+}
+.content-layout,
+.page-body {
+  flex-direction: row;
+}
+.content-layout {
+  flex: 1;
+  gap: var(--gap-9xl);
+}
+.page-body {
+  align-self: stretch;
+  padding: 0 var(--padding-31xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-10xl);
+  color: var(--dark);
+  font-family: var(--font-archivo);
+}
+.booking-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightcyan);
+  color: var(--dark);
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 1275px) {
+  .content-wrapper {
+    flex: 1;
+  }
+  .content-layout {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .content-wrapper {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .listing-title1 {
+    flex-wrap: wrap;
+  }
+  .price-value {
+    font-size: var(--font-size-10xl);
+  }
+  .host-details {
+    flex-wrap: wrap;
+  }
+  .listing-info1 {
+    padding-top: var(--padding-4xl);
+    padding-bottom: var(--padding-4xl);
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .page-body {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .brightwoods-cabin {
+    font-size: var(--font-size-4xl);
+  }
+  .price-value {
+    font-size: var(--font-size-3xl);
+  }
+}

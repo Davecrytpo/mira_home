@@ -1,0 +1,40 @@
+.label {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.date-guest-input {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  position: relative;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.calendartodayfilled-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .label {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .date-guest-input {
+    padding: 8px;
+  }
+  .calendartodayfilled-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

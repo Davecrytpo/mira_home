@@ -1,0 +1,135 @@
+.create-account {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: 1.5em;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-family: 'Archivo', sans-serif;
+  color: #333;
+}
+
+.form-text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  font-family: 'Archivo', sans-serif;
+  box-sizing: border-box;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.input-container img {
+  margin-right: 0.5em;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #87550a;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #703f08;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 1em 0;
+}
+
+.i-already-have-container {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 2.5em;
+}
+
+.i-already-have-container span {
+  color: #87550a;
+  font-weight: 600;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  background-image: url(/public/login-sections@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  text-align: center;
+  color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .login-sections {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-form-container {
+    padding: 1em;
+  }
+
+  .create-account {
+    font-size: 1.2em;
+  }
+}
