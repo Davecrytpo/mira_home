@@ -51,9 +51,10 @@
       "last 1 safari version"
     ]
   },
-  "engines": {
-    "node": ">=14.0.0"
-  },
+
+ "engines": {
+  "node": "16.x"
+},
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
