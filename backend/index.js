@@ -11,8 +11,9 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Update CORS to allow requests from your frontend domain on Vercel
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000'
 }));
 
 // In-memory storage for tokens with expiration (in a real app, use a database)
@@ -36,8 +37,8 @@ app.post('/api/send-verification-email', async (req, res) => {
   const expirationTime = Date.now() + 10 * 60 * 1000; // 10 minutes from now
   tokens[token] = { email, expirationTime };
 
-  // Construct the verification link without exposing email/token
-  const verificationLink = `http://localhost:3000/verify?token=${token}`;
+  // Construct the verification link using the frontend URL from the environment variable
+  const verificationLink = `${process.env.FRONTEND_URL}/verify?token=${token}`;
 
   const mailOptions = {
     from: '"Mira\'s Home Service" <no-reply@mira.com>',

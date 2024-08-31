@@ -15,7 +15,7 @@ const SignInPage = () => {
 
     try {
       // Check if the user's email is verified
-      const response = await fetch("http://localhost:5000/api/check-email-verification", {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/check-email-verification`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -25,12 +25,12 @@ const SignInPage = () => {
 
       const data = await response.json();
       if (response.ok) {
-        if (data.verified) {
+        if (data.message === 'Sign in successful') {
           alert("Welcome Onboard!");
           // Navigate to the Property Details page upon successful sign-in
           navigate("/property-details");
         } else {
-          setError("Please verify your email before signing in.");
+          setError(data.message);
         }
       } else {
         setError(data.message);

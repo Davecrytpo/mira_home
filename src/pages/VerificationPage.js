@@ -10,7 +10,7 @@ const VerificationPage = () => {
     const email = queryParams.get("email");
 
     const verifyEmail = async () => {
-      const response = await fetch(`http://localhost:5000/api/verify?email=${email}`);
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/verify?email=${email}`);
       
       if (response.ok) {
         alert("Email verified! You can now sign in.");

@@ -1,9 +1,10 @@
+/* Main container */
 .hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
 }
 
 .hero-container-inner {
@@ -11,20 +12,22 @@
   width: 100%;
   margin: 0 auto;
   padding: 40px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading section */
 .find-a-host-for-every-journey-parent {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .find-a-host-container {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.2;
-  color: #333;
+  color: #333333;
+  margin-bottom: 10px;
 }
 
 .host {
@@ -32,173 +35,96 @@
 }
 
 .discover-the-best {
-  font-size: 1.25rem;
-  color: #666;
+  font-size: 1.125rem;
+  color: #666666;
   margin-top: 10px;
 }
 
+/* Form container */
 .form5 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns for the first row */
   gap: 15px;
   width: 100%;
 }
 
-.autocompletebasic {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex: 1;
-}
-
-.text {
+.autocompletebasic,
+.date-picker-container,
+.guest-input,
+.search-button {
   width: 100%;
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
 }
 
-.date-picker-container {
-  flex: 1;
-}
-
-.date-picker {
-  width: 85%;
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+/* Ensure all inputs in the same row are evenly spaced */
+.autocompletebasic {
+  grid-column: span 3; /* Full width for the Accommodation input */
 }
 
 .grouped {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for Guest input and Search button */
+  gap: 15px;
+  grid-column: span 3; /* Full width for the date pickers */
 }
 
-.guest-input {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex: 1;
-}
-
+.text, 
+.date-picker,
 .label1 {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   font-size: 1rem;
+  background-color: #f5f5f5;
 }
 
 .search-button {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
   padding: 12px 20px;
   border-radius: 5px;
   background-color: #f97316;
   color: white;
   cursor: pointer;
-  flex: 0 1 auto;
 }
 
-.search-button .button2 {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.iconhome, .iconuser, .iconsearch {
-  width: 24px;
-  height: 24px;
-}
-
+/* Availability message */
 .availability-message {
   margin-top: 20px;
   font-size: 1rem;
-  color: #333;
+  color: #333333;
   text-align: center;
 }
 
 /* Mobile Devices */
 @media screen and (max-width: 450px) {
-  .hero-container-inner {
-    padding: 20px;
-  }
-
-  .find-a-host-container {
-    font-size: 1.75rem;
-    line-height: 1.2;
-  }
-
-  .discover-the-best {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
   .form5 {
-    flex-direction: column;
-    gap: 15px;
+    grid-template-columns: 1fr;
   }
 
-  .autocompletebasic, .grouped, .guest-input, .search-button {
-    width: 100%;
+  .grouped {
+    grid-template-columns: 1fr;
   }
 
   .search-button {
-    padding: 10px;
     width: 100%;
+    padding: 15px;
   }
 }
 
 /* Tablets and small laptops */
 @media screen and (max-width: 768px) {
-  .hero-container-inner {
-    padding: 30px;
-  }
-
-  .find-a-host-container {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-
-  .discover-the-best {
-    font-size: 1.125rem;
-    line-height: 1.5;
-  }
-
   .form5 {
-    flex-direction: row;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .autocompletebasic, .grouped, .guest-input, .search-button {
-    width: 100%;
+  .grouped {
+    grid-template-columns: 1fr;
   }
 
   .search-button {
-    padding: 10px;
-    width: auto;
-  }
-}
-
-/* Desktops */
-@media screen and (min-width: 768px) {
-  .hero-container-inner {
-    padding: 40px;
-  }
-
-  .form5 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
     width: 100%;
+    padding: 15px;
   }
 }

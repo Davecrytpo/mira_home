@@ -53,7 +53,7 @@ const HeroContainer = ({ className = '' }) => {
                   </option>
                 ))}
               </select>
-              <img className="iconhome" alt="Home Icon" src="/iconhome.svg" />
+              {/* <img className="iconhome" alt="Home Icon" src="/iconhome.svg" /> */}
             </div>
             <div className="grouped">
               <div className="date-picker-container">
@@ -82,7 +82,7 @@ const HeroContainer = ({ className = '' }) => {
                   value={guestCount}
                   onChange={(e) => setGuestCount(e.target.value)}
                 />
-                <img className="iconuser" alt="User Icon" src="/iconuser.svg" />
+                {/* <img className="iconuser" alt="User Icon" src="/iconuser.svg" /> */}
               </div>
             </div>
             <div className="search-button" onClick={checkAvailability}>

@@ -27,7 +27,7 @@ const SignUpPage = () => {
 
     try {
       // Send verification email request to backend
-      const response = await fetch("http://localhost:5000/api/send-verification-email", {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/send-verification-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

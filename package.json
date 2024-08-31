@@ -18,7 +18,9 @@
     "@types/node": "^16.11.14",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "bcryptjs": "^2.4.3",
     "lru-cache": "^11.0.0",
+    "mongoose": "^8.6.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-apple-login": "^1.1.6",
@@ -52,11 +54,9 @@
       "last 1 safari version"
     ]
   },
-
-"engines": {
-  "node": ">=20.x"
-},
-
+  "engines": {
+    "node": ">=20.x"
+  },
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
